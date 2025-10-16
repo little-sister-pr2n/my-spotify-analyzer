@@ -31,7 +31,7 @@ const TimeRankingTable = ({ results }) => {
           </thead>
           <tbody className="divide-y divide-gray-700">
             {results.slice(0, 100).map((item, index) => (
-              <tr key={`<span class="math-inline">\{item\.name\}\-</span>{index}-time`} className="hover:bg-gray-600">
+              <tr key={index} className="hover:bg-gray-600">
                 <td className="px-6 py-4 font-medium text-white whitespace-nowrap">{index + 1}</td>
                 <td className="px-6 py-4">{item.name}</td>
                 <td className="px-6 py-4 whitespace-nowrap">{formatMs(item.totalMs)}</td>

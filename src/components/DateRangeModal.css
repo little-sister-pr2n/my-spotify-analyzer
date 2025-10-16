@@ -1,0 +1,144 @@
+/* DateRangeModal.css - ダークテーマ対応 */
+
+/* カレンダー全体 */
+.react-datepicker {
+  background-color: #1f2937 !important; /* gray-800 */
+  border: 1px solid #4b5563 !important; /* gray-600 */
+  font-family: inherit;
+}
+
+/* ヘッダー部分（月・年表示エリア） */
+.react-datepicker__header {
+  background-color: #374151 !important; /* gray-700 */
+  border-bottom: 1px solid #4b5563 !important;
+  padding-top: 8px;
+}
+
+/* 現在の月表示テキスト */
+.react-datepicker__current-month {
+  color: #f3f4f6 !important; /* gray-100 */
+  font-weight: 600;
+}
+
+/* 曜日の行 */
+.react-datepicker__day-name {
+  color: #9ca3af !important; /* gray-400 */
+  font-weight: 500;
+}
+
+/* 日付セル（通常） */
+.react-datepicker__day {
+  color: #f3f4f6 !important; /* gray-100 - データがある日 */
+  background-color: transparent;
+}
+
+.react-datepicker__day:hover {
+  background-color: #4b5563 !important; /* gray-600 */
+  border-radius: 0.3rem;
+}
+
+/* 選択されている日付 */
+.react-datepicker__day--selected,
+.react-datepicker__day--in-selecting-range,
+.react-datepicker__day--in-range {
+  background-color: #3b82f6 !important; /* blue-500 */
+  color: white !important;
+  border-radius: 0.3rem;
+}
+
+/* 範囲選択の開始・終了日 */
+.react-datepicker__day--range-start,
+.react-datepicker__day--range-end {
+  background-color: #2563eb !important; /* blue-600 */
+  color: white !important;
+}
+
+/* 選択できない日付（範囲外） */
+.react-datepicker__day--disabled {
+  color: #4b5563 !important; /* gray-600 - データがない日 */
+  cursor: not-allowed;
+}
+
+.react-datepicker__day--disabled:hover {
+  background-color: transparent !important;
+}
+
+/* 今日の日付 */
+.react-datepicker__day--today {
+  font-weight: bold;
+  border: 1px solid #60a5fa; /* blue-400 */
+  border-radius: 0.3rem;
+}
+
+/* 前月・次月の矢印ボタン */
+.react-datepicker__navigation {
+  top: 10px;
+}
+
+.react-datepicker__navigation-icon::before {
+  border-color: #9ca3af !important; /* gray-400 */
+}
+
+.react-datepicker__navigation:hover .react-datepicker__navigation-icon::before {
+  border-color: #f3f4f6 !important; /* gray-100 */
+}
+
+/* 月・年のドロップダウン */
+.react-datepicker__month-dropdown,
+.react-datepicker__year-dropdown {
+  background-color: #1f2937 !important; /* gray-800 */
+  border: 1px solid #4b5563 !important;
+}
+
+.react-datepicker__month-option,
+.react-datepicker__year-option {
+  color: #f3f4f6 !important; /* gray-100 */
+  background-color: #1f2937 !important;
+}
+
+.react-datepicker__month-option:hover,
+.react-datepicker__year-option:hover {
+  background-color: #374151 !important; /* gray-700 */
+}
+
+.react-datepicker__month-option--selected,
+.react-datepicker__year-option--selected {
+  background-color: #3b82f6 !important; /* blue-500 */
+  color: white !important;
+}
+
+/* ドロップダウンの三角アイコン */
+.react-datepicker__year-read-view--down-arrow,
+.react-datepicker__month-read-view--down-arrow {
+  border-color: #9ca3af transparent transparent !important; /* gray-400 */
+}
+
+/* 月・年の表示部分（クリック可能） */
+.react-datepicker__month-read-view,
+.react-datepicker__year-read-view {
+  color: #f3f4f6 !important;
+  padding: 4px 8px;
+  border-radius: 0.25rem;
+}
+
+.react-datepicker__month-read-view:hover,
+.react-datepicker__year-read-view:hover {
+  background-color: #374151 !important; /* gray-700 */
+}
+
+/* 年月のドロップダウンコンテナ */
+.react-datepicker__month-dropdown-container,
+.react-datepicker__year-dropdown-container {
+  margin: 0 4px;
+}
+
+/* 他の月の日付（前月・翌月の日付） */
+.react-datepicker__day--outside-month {
+  color: #6b7280 !important; /* gray-500 */
+}
+
+/* キーボードフォーカス時 */
+.react-datepicker__day--keyboard-selected {
+  background-color: #4b5563 !important; /* gray-600 */
+  color: #f3f4f6 !important;
+}
